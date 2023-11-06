@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One', sans-serif;
+    background-color: #111828;
+}
+
+.top-nav {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    /* Pour centrer horizontalement */
+}
+
+.top-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    /* Pour retirer le soulignement des liens */
+    color: white;
+    /* Couleur du texte des liens */
+    font-size: 18px;
+    /* Taille du texte des liens */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Pour espacer les colonnes horizontalement */
+    align-items: center; /* Pour centrer verticalement */
+    height: 100vh;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+}
+
+.left-column {
+    color: white;
+    padding-right: 20px; /* Espace entre les colonnes */
+}
+
+.left-column p {
+    font-size: 13px;
+    margin-bottom: 40px;
+    margin-top: -25px;
+}
+
+.left-column h1{
+    font-size: 45px;
+}
+
+.right-column img {
+    max-width: 100%; /* Pour assurer que l'image ne dépasse pas la largeur de la colonne */
+}
