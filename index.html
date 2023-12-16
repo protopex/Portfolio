@@ -4,39 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site web</title>
+    <title>Portfolio Antoine</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
 </head>
 
+
+
 <body>
 
-    <nav>
-        <ul class="top-nav">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Présentation</a></li>
-            <li><a href="#">Projets</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-
-        <div class="container">
-            <div class="column left-column">
-                <div class="titre">
-                    <h1>ANTOINE ATTALI</h1>
-                    <p>Étudiant en BUT MMI, spécialisation création numérique</p>
-                </div>
-            </div>
-            <div class="column right-column">
-                <img src="image astronaute.png" alt="Astronaute">
-            </div>
+    <div class="navbar" id="accueil">
+        <div class="nav-left">
+            <a href="#accueil">accueil</a>
+            <a href="#presentation">présentation</a>
+            <a href="#projets">projets</a>
         </div>
-
-        <!-- Le reste du contenu de votre page va ici -->
     </div>
 
+    <div class="welcome-section">
+        <div>
+            <h1>BIENVENUE !</h1>
+            <div class="test">
+                <p>JE SUIS</p>
+                <div class="line"></div>
+            </div>
+            <p class="name">ANTOINE ATTALI</p>
+            <p class="title">étudiant en BUT MMI, spécialisation création numérique</p>
+        </div>
+        <div class="img-welcome">
+            <img src="image antoine.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="text-container" id="presentation">
+        <h1>Qui suis-je ?</h1>
+        <div class="divider"></div>
+        <p> Bonjour ! Je suis Antoine Attali, étudiant en deuxième année de BUT MMI (Métiers du Multimédia et de l'Internet) avec une spécialisation en création numérique à l'université Gustave Eiffel à Champs-Sur-Marne. Passionné par les jeux vidéo, le sport et le montage audio et vidéo, on dit de moi que je suis motivé et ambitieux. Mon moteur, c'est la création numérique : repousser les limites pour donner vie à des projets innovants est ma passion, avec une affinité particulière pour le montage.</p>
+    </div>
+
+
+    <div class="skills-section" >
+        <h1 class="comp">Mes compétences ?</h1>
+        <div class="divider2"></div>
+        <div class="skills-container">
+
+            <div class="skill-item">
+                <img src="AE.svg" alt="After Effects">
+                <p>after effect</p>
+            </div>
+            <div class="skill-item">
+                <img src="PS.svg" alt="Photoshop">
+                <p>photoshop</p>
+            </div>
+            <div class="skill-item">
+                <img src="PR.png" alt="Premiere Pro">
+                <p>premiere pro</p>
+            </div>
+            <div class="skill-item">
+                <img src="FIGMA.svg" alt="Figma">
+                <p>figma</p>
+            </div>
+            <div class="skill-item">
+                <img src="VS.svg" alt="HTML/CSS">
+                <p>html/css</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mes-projets">
+        <h1>Mes projets !</h1>
+        <div class="divider3"></div>
+        <div class="gallery">
+            <div class="gallery-container">
+                <img src="images/arcane-jinx.jpg" alt="" class="gallery-item gallery-item-1" data-index="1">
+                <img src="images/campagne paris.png" alt="" class="gallery-item gallery-item-2" data-index="2">
+                <img src="images/sons de l'horreur.jpg" alt="" class="gallery-item gallery-item-3" data-index="3">
+                <img src="images/dataviz.png" alt="" class="gallery-item gallery-item-4" data-index="4">
+                <img src="images/cv_video.png" alt="" class="gallery-item gallery-item-5" data-index="5">
+            </div>
+            <div class="gallery-controls"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <nav>
+            <a href="#accueil">accueil</a>
+            <a href="#about">à propos de moi</a>
+            <a href="#skills">mes compétences</a>
+            <a href="#projects">mes projets</a>
+        </nav>
+        <div class="line2"></div>
+    </footer>
+
+
 </body>
+
+</html>
+
 
 </html>

@@ -2,57 +2,300 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Krona One', sans-serif;
-    background-color: #111828;
+    background-color: #171516;
+    color: #fff;
+    scroll-behavior: smooth;
 }
 
-.top-nav {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    /* Pour centrer horizontalement */
-}
-
-.top-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.top-nav a {
-    text-decoration: none;
-    /* Pour retirer le soulignement des liens */
-    color: white;
-    /* Couleur du texte des liens */
-    font-size: 18px;
-    /* Taille du texte des liens */
-}
-
-.container {
+.welcome-section {
+    /* You can adjust as needed */
     display: flex;
-    justify-content: space-around; /* Pour espacer les colonnes horizontalement */
-    align-items: center; /* Pour centrer verticalement */
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.column {
-    flex: 1;
+.welcome-section h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    /* Adjust the space below the welcome message */
+}
+
+.line {
+    width: 85%;
+    height: 2px;
+    background-color: white;
+}
+
+.img-welcome img {
+    width: 600px;
+}
+
+.name {
+    font-size: 4em;
+    /* Large font size for the name */
+    line-height: 1.2;
+}
+
+.title {
+    font-size: 1.125rem;
+    /* Smaller font size for the title */
+    margin-top: 10px;
     text-align: center;
 }
 
-.left-column {
+.navbar {
+    display: flex;
+    width: 100vw;
+    height: 7vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-left>* {
+    margin: 0 30px;
+}
+
+.text-container {
+    background-color: #171615;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.divider {
+    height: 2px;
+    background-color: #fff;
+    width: 100%;
+    /* Adjust the width of the line as needed */
+    margin: 20px auto;
+    /* Centers the line with margin */
+}
+
+.text-container h1 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #fff;
+}
+
+
+.skills-section {
+    width: 100%;
+    max-width: 1400px;
+    /* Adjust as necessary */
+    padding: 40px;
+}
+
+.skills-section h1 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.divider2 {
+    height: 3px;
+    background-color: #fff;
+    width: 100%;
+    /* Adjust the width of the line as needed */
+    margin: 30px auto;
+    /* Centers the line with margin */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-item img {
+    height: 80px;
+    /* Adjust the size of the SVGs as necessary */
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1em;
     color: white;
-    padding-right: 20px; /* Espace entre les colonnes */
 }
 
-.left-column p {
-    font-size: 13px;
-    margin-bottom: 40px;
-    margin-top: -25px;
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 100%;
+    }
 }
 
-.left-column h1{
-    font-size: 45px;
+.mes-projets {
+    width: 100%;
+    max-width: 1400px;
+    /* Adjust as necessary */
+    padding: 40px;
 }
 
-.right-column img {
-    max-width: 100%; /* Pour assurer que l'image ne dépasse pas la largeur de la colonne */
+.divider3 {
+    height: 3px;
+    background-color: #fff;
+    width: 100%;
+    /* Adjust the width of the line as needed */
+    margin: 30px auto;
+    /* Centers the line with margin */
+}
+
+.gallery-container {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 860px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.gallery-item {
+    height: 300px;
+    opacity: 0;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    width: auto;
+    z-index: 0;
+    background-size: contain;
+}
+
+.gallery-item-1 {
+    left: 15%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+
+.gallery-item-2, .gallery-item-4 {
+    height: 370px;
+    opacity: 1;
+    width: 760px;
+    z-index: 1;
+}
+
+.gallery-item-2 {
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-3 {
+    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35);
+    height: 470px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 860px;
+    z-index: 2;
+}
+
+.gallery-item-4 {
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-5 {
+    left: 85%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+
+.gallery-controls {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 65px 0;
+    height: 100px;
+}
+
+.gallery-controls button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.225rem;
+    margin: 0 25px 0 25px;
+    text-transform: capitalize;
+    color: var(--fill);
+}
+
+.gallery-controls-précédente {
+    position: relative;
+}
+
+.gallery-controls-précédente::before {
+    border: solid var(--fill);
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    left: -30px;
+    padding: 10px;
+    position: absolute;
+    top: 25%;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left .15s ease-in-out;
+    width: 5px;
+}
+
+.gallery-controls-suivante:hover::before {
+    right: -40px;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #171615;
+    text-align: center;
+}
+
+.footer nav {
+    display: inline-block;
+    margin-bottom: 10px;
+    /* Adjust the space above the line */
+}
+
+.footer nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 70px;
+    /* Space between links */
+}
+
+.line2 {
+    height: 3px;
+    width: 90%;
+    background-color: white;
+    margin-top: 10px;
+    margin: auto;
+    /* Adjust the space below the navigation items */
 }
