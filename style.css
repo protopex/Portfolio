@@ -54,6 +54,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: #020202a1;
+    z-index: 100;
 }
 
 .navbar a {
@@ -161,6 +162,7 @@ body {
     width: 100%;
     max-width: 1400px;
     /* Adjust as necessary */
+    margin-top: 60px;
     padding: 40px;
 }
 
