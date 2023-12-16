@@ -47,11 +47,13 @@ body {
 }
 
 .navbar {
+    position: fixed;
     display: flex;
     width: 100vw;
     height: 7vh;
     justify-content: space-around;
     align-items: center;
+    background-color: #020202a1;
 }
 
 .navbar a {
@@ -273,7 +275,7 @@ body {
 
 .footer {
     padding: 20px;
-    background-color: #171615;
+    background-color: #111010;
     text-align: center;
 }
 
