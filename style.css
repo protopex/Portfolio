@@ -7,7 +7,6 @@ body {
     scroll-behavior: smooth;
 }
 
-
 .welcome-section {
     /* You can adjust as needed */
     display: flex;
@@ -177,8 +176,6 @@ body {
 }
 
 .gallery-container {
-    padding-top: 70px;
-    align-items: center;
     display: flex;
     height: 400px;
     margin: 0 auto;
@@ -238,7 +235,7 @@ body {
 .gallery-controls {
     display: flex;
     justify-content: center;
-    margin: 25px 0;
+    margin: 60px 0;
     height: 100px;
 }
 
