@@ -75,7 +75,7 @@ body {
 
 
 .text-container {
-    background-color: #171615;
+    background-color: #171516;
     padding: 40px;
     border-radius: 8px;
 }
@@ -103,7 +103,6 @@ body {
 
 .skills-section {
     width: 100%;
-    max-width: 1400px;
     /* Adjust as necessary */
     padding: 40px;
 }
@@ -160,8 +159,6 @@ body {
 
 .mes-projets {
     width: 100%;
-    max-width: 1400px;
-    /* Adjust as necessary */
     margin-top: 60px;
     padding: 40px;
 }
