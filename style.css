@@ -7,6 +7,7 @@ body {
     scroll-behavior: smooth;
 }
 
+
 .welcome-section {
     /* You can adjust as needed */
     display: flex;
@@ -73,6 +74,7 @@ body {
     margin: 0 30px;
 }
 
+
 .text-container {
     background-color: #171615;
     padding: 40px;
@@ -99,7 +101,6 @@ body {
     line-height: 1.6;
     color: #fff;
 }
-
 
 .skills-section {
     width: 100%;
@@ -168,7 +169,7 @@ body {
 
 .divider3 {
     height: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
     width: 100%;
     /* Adjust the width of the line as needed */
     margin: 30px auto;
@@ -176,13 +177,13 @@ body {
 }
 
 .gallery-container {
+    padding-top: 70px;
     align-items: center;
     display: flex;
     height: 400px;
     margin: 0 auto;
     max-width: 860px;
     position: relative;
-    margin-top: 100px;
 }
 
 .gallery-item {
@@ -235,10 +236,9 @@ body {
 }
 
 .gallery-controls {
-    color: white;
     display: flex;
     justify-content: center;
-    margin: 65px 0;
+    margin: 25px 0;
     height: 100px;
 }
 
@@ -275,6 +275,7 @@ body {
     right: -40px;
 }
 
+
 .footer {
     padding: 20px;
     background-color: #111010;
@@ -303,3 +304,4 @@ body {
     margin: auto;
     /* Adjust the space below the navigation items */
 }
+
