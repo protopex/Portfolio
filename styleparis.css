@@ -141,3 +141,81 @@ body {
 .gallery-controls-suivante:hover::before {
     right: -40px;
 }
+
+
+/* Styles pour les écrans de taille moyenne (tablettes) */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        height: 10vh;
+        font-size: 14px;
+    }
+
+    .navbar .nav-left a {
+        padding: 5px;
+    }
+
+    .mes-projets {
+        padding-top: 60px;
+    }
+
+    .gallery-container {
+        height: 300px;
+        max-width: 600px;
+        padding-top: 20px;
+    }
+
+    .gallery-item {
+        height: 200px;
+    }
+
+    .gallery-item-2, .gallery-item-4 {
+        height: 250px;
+        width: 500px;
+    }
+
+    .gallery-item-3 {
+        height: 350px;
+        width: 600px;
+    }
+
+    .gallery-controls {
+        margin: 40px 0;
+    }
+}
+
+/* Styles pour les écrans plus petits (smartphones) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 15vh;
+        font-size: 12px;
+    }
+
+    .mes-projets {
+        padding-top: 90px;
+    }
+    
+
+    .gallery-container {
+        height: 200px;
+        max-width: 400px;
+        padding-top: 10px;
+    }
+
+    .gallery-item {
+        height: 150px;
+    }
+
+    .gallery-item-2, .gallery-item-4 {
+        height: 200px;
+        width: 400px;
+    }
+
+    .gallery-item-3 {
+        height: 250px;
+        width: 450px;
+    }
+
+    .gallery-controls {
+        margin: 40px 0;
+    }
+}
