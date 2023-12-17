@@ -514,3 +514,13 @@ body {
         font-size: 8px; /* Réduction de la taille de la police pour les téléphones */
     }
 }
+
+@media (max-width: 400px){
+    .navbar .nav-left a {
+        padding: 0px 0px; /* Ajustement de l'espacement pour les tablettes */
+    }
+    .footer nav a {
+        padding: 0 6px; /* Ajustement de l'espacement horizontal pour les téléphones */
+        font-size: 8px; /* Réduction de la taille de la police pour les téléphones */
+    }
+}
