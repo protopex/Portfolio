@@ -7,12 +7,11 @@ body {
     scroll-behavior: smooth;
 }
 
-
 .welcome-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 90vh;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -54,9 +53,17 @@ body {
     z-index: 100;
 }
 
-.navbar a {
-    color: inherit;
+.navbar .nav-left a {
+    color: white; 
     text-decoration: none;
+    padding: 5px 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+.navbar .nav-left a:hover {
+    background-color: white; 
+    color: black;
+    border-radius: 10px;
 }
 
 .test {
@@ -69,6 +76,37 @@ body {
 .nav-left>* {
     margin: 0 30px;
 }
+
+#callToScroll {
+    margin: auto;
+    height: 34px;
+    width: 20px;
+    border: 1px #ffffff solid;
+    border-radius: 11px;
+  }
+  
+  #callToScroll:after {
+    content: '';
+    display: block;
+    height: 6px;
+    width: 6px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin: 2px auto;
+    opacity: 0;
+    animation: animateScroll 1.25s infinite;
+    will-change: transform;
+  }
+  
+  @keyframes animateScroll {
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+  }
 
 
 .text-container {
@@ -273,6 +311,13 @@ body {
     text-decoration: none;
     font-size: 16px;
     padding: 0 70px;
+    transition: background-color 0.3s ease; 
+}
+
+.footer a:hover {
+    background-color: white; 
+    color: black;
+    border-radius: 10px;
 }
 
 .line2 {
