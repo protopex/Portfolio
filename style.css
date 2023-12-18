@@ -5,6 +5,7 @@ body {
     background-color: #171516;
     color: #fff;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .welcome-section {
