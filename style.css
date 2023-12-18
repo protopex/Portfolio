@@ -452,7 +452,7 @@ body {
 /* Ajustements pour les écrans plus petits */
 @media (max-width: 600px) {
     .navbar .nav-left a {
-        padding: 2px 2px; /* Ajustement de l'espacement pour les tablettes */
+        padding: 0px 0px; 
     }
     
     .welcome-section h1 {
