@@ -31,6 +31,39 @@ body {
     border-radius: 10px;
 }
 
+h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.description {
+    flex: 0 0 65%;
+    padding-right: 20px;
+}
+
+.skills {
+    flex: 0 0 30%;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
 .mes-projets {
     padding: 10px;
     padding-top: 40px;
@@ -39,7 +72,7 @@ body {
 .divider3 {
     height: 3px;
     background-color: #ffffff;
-    width: 100%;
+    width: 90%;
     margin: 30px auto;
 }
 
