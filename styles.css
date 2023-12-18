@@ -18,14 +18,14 @@ body {
     z-index: 100;
 }
 
-.navbar .nav-left a {
+.navbar a {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
 }
 
-.navbar .nav-left a:hover {
+.navbar a:hover {
     background-color: white;
     color: black;
     border-radius: 10px;
